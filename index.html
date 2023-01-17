@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="icon" href="assets/telezhka.ico">
+    <title>Интернет-магазин</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="index.html"> <img src="assets/telezhka.png" height="100"></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html">Главная</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="profile.html">Профиль</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Корзина</a>
+                  </li>
+                </ul>
+                <form class="d-flex" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Поиск" aria-label="Search">
+                  <button class="btn btn-outline-warning" type="submit">Найти</button>
+                </form>
+              </div>
+            </div>
+          </nav> 
+    </header>
+    <main>
+      <section>
+        <h3>Съедобные</h3>
+        <div class="catalogue">
+          <div class="card" style="width: 270px;">
+            <img src="assets/WikiGoose.jpg" class="card-img-top" alt="Обычный гусь" height="200">
+            <div class="card-body">
+              <h5 class="card-title">Гусь обыкновенный</h5>
+              <p class="card-text">Самый обычный, так сказать "базовый" гусь.</p>
+              <a href="#" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#usualgoose">Купить</a>
+            </div>
+          </div>
+          <div class="card" style="width: 270px;">
+            <img src="assets/GentleGoose.jpg" class="card-img-top" alt="Гусь в галстуке-бабочке"  height="200">
+            <div class="card-body">
+              <h5 class="card-title">Гусь-джентльмен</h5>
+              <p class="card-text">Самый интеллигетный гусь из всех. Имеет большой словарный запас, состоящий из таких изящных слов, как: "Гагу", "Гагё", "Гагаго" и так далее.</p>
+              <a href="#" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#gentlegoose">Купить</a>
+            </div>
+          </div>
+          <div class="card" style="width: 270px;">
+            <img src="assets/FattyGoose.jpg" class="card-img-top" alt="Гусь с толстеньким тельцем" height="200">
+            <div class="card-body">
+              <h5 class="card-title">Полный гусь</h5>
+              <p class="card-text">Гусь, любящий плотно поесть. Любит сладости, хлебобулочные изделия и всю остальную еду.</p>
+              <a href="#" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#fattygoose">Купить</a>
+            </div>
+          </div>
+          <div class="card" style="width: 270px;">
+            <img src="assets/KhorovodOfGooses.jpg " class="card-img-top" alt="Трое гусей идут друг за другом" height="200">
+            <div class="card-body">
+              <h5 class="card-title">Банда гусей</h5>
+              <p class="card-text">Они держали в страхе Казань 4 года, устраивали перестрелки с милицей, подкупали местную власть, имели своих людей в больницах и военкоматах, ставили на счетчик всех, у кого есть деньги, промышляли грабежами.</p>
+              <a href="#" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#khorovodofgooses">Купить</a>
+            </div>
+          </div>
+          <div class="card" style="width: 270px;">
+            <img src="assets/InterestedGoose.jpg" class="card-img-top" alt="Гусь, смотрящий в камеру" height="200">
+            <div class="card-body">
+              <h5 class="card-title">Заинтересованный гусь</h5>
+              <p class="card-text">Довольно любопытный гусь. Лезёт туда, куда не надо. Берите, пока ему не оторвали клюв на базаре!</p>
+              <a href="#" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#interestedgoose">Купить</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+
+      <div class="modal fade" id="usualgoose" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content" >
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Гусь обыкновенный</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body buy">
+              <img src="assets/WikiGoose.jpg" width="200">
+              <div class="desc">
+                <p class="text">Самый обычный, так сказать "базовый", гусь из всех.</p>
+                <div class="cat">
+                  Перистость: 
+                  <div class="card">
+                    9/10
+                  </div>
+                </div>
+                <div class="cat">
+                  Чувство юмора: 
+                  <div class="card">
+                    6/10
+                  </div>
+                </div>
+                <div class="cat">
+                  Вкус: 
+                  <div class="card">
+                    7/10
+                  </div>
+                </div> 
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+              <button type="button" class="btn btn-warning" id="UsNotifBtn">В корзину</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="modal fade" id="gentlegoose" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content" >
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Гусь-джентльмен</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body buy">
+              <img src="assets/GentleGoose.jpg" width="200">
+              <div class="desc">
+                <p class="text">Самый интеллигетный гусь из всех. Имеет большой словарный запас, состоящий из таких изящных слов, как: "Гагу", "Гагё", "Гагаго" и так далее.</p>
+                <div class="cat">
+                  Перистость: 
+                  <div class="card">
+                    8/10
+                  </div>
+                </div>
+                <div class="cat">
+                  Чувство юмора: 
+                  <div class="card">
+                    10/10
+                  </div>
+                </div>
+                <div class="cat">
+                  Вкус: 
+                  <div class="card">
+                    4/10
+                  </div>
+                </div> 
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+              <button type="button" class="btn btn-warning" id="GeNotifBtn">В корзину</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="modal fade" id="fattygoose" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content" >
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Полный гусь</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body buy">
+              <img src="assets/FattyGoose.jpg" width="200">
+              <div class="desc">
+                <p class="text">Гусь, любящий плотно поесть. Любит сладости, хлебобулочные изделия и всю остальную еду.</p>
+                <div class="cat">
+                  Перистость: 
+                  <div class="card">
+                    10/10
+                  </div>
+                </div>
+                <div class="cat">
+                  Чувство юмора: 
+                  <div class="card">
+                    6/10
+                  </div>
+                </div>
+                <div class="cat">
+                  Вкус: 
+                  <div class="card">
+                    9/10
+                  </div>
+                </div> 
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+              <button type="button" class="btn btn-warning" id="FaNotifBtn">В корзину</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="modal fade" id="khorovodofgooses" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content" >
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Банда гусей</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body buy">
+              <img src="assets/KhorovodOfGooses.jpg" width="200">
+              <div class="desc">
+                <p class="text">Они держали в страхе Казань 4 года, устраивали перестрелки с милицей, подкупали местную власть, имели своих людей в больницах и военкоматах, ставили на счетчик всех, у кого есть деньги, промышляли грабежами.</p>
+                <div class="cat">
+                  Перистость: 
+                  <div class="card">
+                    7/10
+                  </div>
+                </div>
+                <div class="cat">
+                  Чувство юмора: 
+                  <div class="card">
+                    5/10
+                  </div>
+                </div>
+                <div class="cat">
+                  Вкус: 
+                  <div class="card">
+                    6/10
+                  </div>
+                </div> 
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+              <button type="button" class="btn btn-warning" id="KhNotifBtn">В корзину</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="modal fade" id="interestedgoose" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content" >
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Заинтересованный гусь</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body buy">
+              <img src="assets/InterestedGoose.jpg" width="200">
+              <div class="desc">
+                <p class="text">Довольно любопытный гусь. Лезёт туда, куда не надо. Берите, пока ему не оторвали клюв на базаре!</p>
+                <div class="cat">
+                  Перистость: 
+                  <div class="card">
+                    8/10
+                  </div>
+                </div>
+                <div class="cat">
+                  Чувство юмора: 
+                  <div class="card">
+                    7/10
+                  </div>
+                </div>
+                <div class="cat">
+                  Вкус: 
+                  <div class="card">
+                    8/10
+                  </div>
+                </div> 
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+              <button type="button" class="btn btn-warning" id="InNotifBtn">В корзину</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+      <div class="toast-container position-fixed bottom-0 end-0 p-3">
+        <div id="Notiffic" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+          <div class="toast-header">
+            <img src="assets/telezhka.jpg" width="40" height="30" class="rounded me-2" alt="">
+            <strong class="me-auto">Уведомления</strong>
+            <small>Сейчас</small>
+            <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+          </div>
+          <div class="toast-body">
+            Товар добавлен в корзину.   
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <section>
+        <h3>Отзывы</h3>
+      <div class="comment">
+        <h6 class="user">
+          <img src="assets/profile.jpg" width="30"> Lambrakis A.
+        </h6>
+        <p>
+          Магазин классный. Хайп!
+        </p>
+      </div>
+      <div class="comment">
+        <h6 class="user">
+          <img src="assets/profile.jpg" width="30"> Ezdina B.
+        </h6>
+        <p>
+          Кто будет покупать гусей?
+        </p>
+        <div class="comment">
+          <h6 class="user">
+            <img src="assets/profile.jpg" width="30"> Sergezha
+          </h6>
+          <p>
+            Я! конечно же. А кто нет?
+          </p>
+        </div>
+      </div>
+      <div class="comment">
+        <h6 class="user">
+          <img src="assets/profile.jpg" width="30"> Sergezha
+        </h6>
+        <p>
+          Господи, да я просто обажаю гусей! Скупил всех, жду новой партии😋😋😋
+        </p>
+      </div>
+      </section>
+      <hr>
+      <div class="importantinfo">
+        <p>
+          Просматривая этот сайт, вы даёте согласие на обработку персональных данных и принимаете <a href="sogl.html">условия пользовательского соглашения</a> нашего сайта. Спасибо.
+        </p>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script>
+      const toastTrigger = document.getElementById('UsNotifBtn')
+      const toastTrigger1 = document.getElementById('GeNotifBtn')
+      const toastTrigger2 = document.getElementById('FaNotifBtn')
+      const toastTrigger3 = document.getElementById('KhNotifBtn')
+      const toastTrigger4 = document.getElementById('InNotifBtn')
+      const toastLiveExample = document.getElementById('Notiffic')
+      if (toastTrigger) { 
+        toastTrigger.addEventListener('click', () => {
+          const toast = new bootstrap.Toast(toastLiveExample)
+        
+          toast.show()
+        })
+      }
+      if (toastTrigger1) { 
+        toastTrigger1.addEventListener('click', () => {
+          const toast = new bootstrap.Toast(toastLiveExample)
+        
+          toast.show()
+        })
+      }
+      if (toastTrigger2) { 
+        toastTrigger2.addEventListener('click', () => {
+          const toast = new bootstrap.Toast(toastLiveExample)
+        
+          toast.show()
+        })
+      }
+      if (toastTrigger3) { 
+        toastTrigger3.addEventListener('click', () => {
+          const toast = new bootstrap.Toast(toastLiveExample)
+        
+          toast.show()
+        })
+      }
+      if (toastTrigger4) { 
+        toastTrigger4.addEventListener('click', () => {
+          const toast = new bootstrap.Toast(toastLiveExample)
+        
+          toast.show()
+        })
+      }
+    </script>
+</body>
+</html>
